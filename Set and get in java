@@ -1,0 +1,68 @@
+// create a class student with private access specifiers.
+class Student{
+    private int id;
+    private String name;
+    private int age;
+    private String gender;
+    private String course;
+    private String degree_honours;
+    public void setId(int id){
+        this.id=id;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setAge(int age){
+        this.age=age;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setGender(String gender){
+        this.gender=gender;
+    }
+    public String getGender(){
+        return gender;
+    }
+    public void setCourse(String course){
+        this.course=course;
+    }
+    public String getCourse(){
+        return course;
+    }
+    public void setDegree_honours(String degreeHonours){
+        this.degree_honours=degreeHonours;
+    }
+    public String getDegree_honours(){
+        return degree_honours;//this is a
+    }
+    // have a print details function.
+    public void printdetails(){
+        System.out.print("This are the details of the student...\n");
+        System.out.print("Id number:"+this.id+"\n");
+        System.out.print("Name:"+this.name+"\n");
+        System.out.print("Age:"+this.age+"\n");
+        System.out.print("Gender:"+this.gender+"\n");
+        System.out.print("Course:"+this.course+"\n");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        // create an object of the type student
+        // class object name=new class
+        Student s1=new Student();
+        s1.setId(123456);
+        s1.setAge(22);
+        s1.setName("Macout Matur");
+        s1.setCourse("Bachelor of Science in Data Science and Analytics");
+        s1.setGender("Male");
+        s1.printdetails();
+
+    }
+}
